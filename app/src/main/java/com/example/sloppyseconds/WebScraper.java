@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import com.android.volley.*;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.spoonacular.DefaultApi;
 
 public class WebScraper extends AppCompatActivity {
     private String URL = "https://www.google.com/search";
