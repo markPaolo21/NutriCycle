@@ -5,6 +5,9 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import android.view.TextureView
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         private const val REQUEST_CAMERA_PERMISSION = 10
     }
     private lateinit var textureView: TextureView
+
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
