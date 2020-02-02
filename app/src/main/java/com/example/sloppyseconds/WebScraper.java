@@ -6,12 +6,17 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 
+import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
 import org.jsoup.nodes.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import com.android.volley.*;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.spoonacular.DefaultApi;
 
 public class WebScraper extends AppCompatActivity {
     private String URL = "https://www.google.com/search";
@@ -31,13 +36,13 @@ public class WebScraper extends AppCompatActivity {
 
 
     private class Scrape extends AsyncTask<Void, Void, Void>{
-
+        ProgressBar progressBar;
 
         @Override
         protected void onPreExecute(){
             super.onPreExecute();
-            ProgressBar progressBar = new ProgressBar(WebScraper.this);
-            progressBar.isShown();
+            progressBar = new ProgressBar(WebScraper.this);
+            progressBar.isIndeterminate();
         }
 
         @Override
@@ -77,7 +82,23 @@ public class WebScraper extends AppCompatActivity {
         @Override
         protected void onPostExecute(Void aVoid){
             super.onPostExecute(aVoid);
+
         }
 
     }
+}
+
+//STUFF arraylist should go in main method, not in an object
+
+class EdamamScraper extends AppCompatActivity {
+
+    //private String apID = "21924bbe";
+    private String apiKey = "29ec211a5fdc4a2189244c2eb5776625";
+    RequestQueue QUEUE;
+    String URLHTTP = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=";
+
+
+
+
+
 }
