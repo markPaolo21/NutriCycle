@@ -1,5 +1,6 @@
 package com.example.sloppyseconds;
 
+import java.util.ArrayList;
 import android.media.Image;
 import android.os.Bundle;
 
@@ -21,6 +22,7 @@ public class MainActivityIE extends AppCompatActivity {
     Button button;
     Animation rotateAnimation;
     ImageView imageView;
+    ArrayList <String> arrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,13 @@ public class MainActivityIE extends AppCompatActivity {
     private void rotateAnimation() {
         rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate);
         imageView.startAnimation(rotateAnimation);
+
+    }
+
+
+
+    private void printEntireList(){
+
 
     }
 
