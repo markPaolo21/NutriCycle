@@ -6,12 +6,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.EditText
+import android.widget.TextView
+import android.view.TextureView
 
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+    companion object {
+        private const val REQUEST_CAMERA_PERMISSION = 10
+    }
+    private lateinit var textureView: TextureView
 
 
 
@@ -42,5 +47,11 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
+
+
     }
+
+
+
+
 }

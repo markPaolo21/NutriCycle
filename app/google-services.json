@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "728022206764",
+    "firebase_url": "https://sloppy-seconds-574e0.firebaseio.com",
+    "project_id": "sloppy-seconds-574e0",
+    "storage_bucket": "sloppy-seconds-574e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728022206764:android:d07820137a11682551c489",
+        "android_client_info": {
+          "package_name": "com.example.sloppyseconds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728022206764-ehmgcd2p8fk6a5d73nln6odpnu1mqe1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYi_zXGEHOibde63VLl5QyxYPXJTLnF3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728022206764-ehmgcd2p8fk6a5d73nln6odpnu1mqe1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
